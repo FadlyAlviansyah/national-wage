@@ -3,7 +3,7 @@
         'name' => 'laravel/laravel',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '5ffd8e5749d6e9af6ff807c3f8fc0cf1ecaff032',
+        'reference' => 'e4a692cf6ea79258ec850a3e152d689bdfd03824',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -60,24 +60,6 @@
             'replaced' => array(
                 0 => '*',
             ),
-        ),
-        'cweagans/composer-configurable-plugin' => array(
-            'pretty_version' => '2.0.0',
-            'version' => '2.0.0.0',
-            'reference' => '15433906511a108a1806710e988629fd24b89974',
-            'type' => 'library',
-            'install_path' => __DIR__ . '/../cweagans/composer-configurable-plugin',
-            'aliases' => array(),
-            'dev_requirement' => false,
-        ),
-        'cweagans/composer-patches' => array(
-            'pretty_version' => '2.0.0',
-            'version' => '2.0.0.0',
-            'reference' => 'bfa6018a5f864653d9ed899b902ea72f858a2cf7',
-            'type' => 'composer-plugin',
-            'install_path' => __DIR__ . '/../cweagans/composer-patches',
-            'aliases' => array(),
-            'dev_requirement' => false,
         ),
         'davedevelopment/hamcrest-php' => array(
             'dev_requirement' => true,
@@ -496,7 +478,7 @@
         'laravel/laravel' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '5ffd8e5749d6e9af6ff807c3f8fc0cf1ecaff032',
+            'reference' => 'e4a692cf6ea79258ec850a3e152d689bdfd03824',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
