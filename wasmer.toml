@@ -1,0 +1,17 @@
+[package]
+name = "fadlyalviansyah89/national-wage"
+version = "0.1.0"
+description = "Project Pemograman Web Kelompok 16 TEK A-2"
+
+[dependencies]
+"php/php" = "^8.3"
+
+[fs]
+"/app" = "."
+
+[[command]]
+name = "run"
+module = "php/php:php"
+runner = "wasi"
+[command.annotations.wasi]
+main-args = ["-S", "0.0.0.0:8000", "-t", "/app/public"]
