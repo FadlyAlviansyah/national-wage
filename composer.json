@@ -8,6 +8,7 @@
     "require": {
         "php": "^8.3",
         "barryvdh/laravel-dompdf": "^3.1",
+        "cweagans/composer-patches": "^2.0",
         "laravel/framework": "^13.17",
         "laravel/sanctum": "^4.5",
         "laravel/tinker": "^3.0",
@@ -74,6 +75,11 @@
     "extra": {
         "laravel": {
             "dont-discover": []
+        },
+        "patches": {
+            "maennchen/zipstream-php": {
+                "Fix CRC32 float assignment on 32-bit PHP": "patches/zipstream-32bit-crc.patch"
+            }
         }
     },
     "config": {
@@ -81,6 +87,7 @@
         "preferred-install": "dist",
         "sort-packages": true,
         "allow-plugins": {
+            "cweagans/composer-patches": true,
             "pestphp/pest-plugin": true,
             "php-http/discovery": true
         }

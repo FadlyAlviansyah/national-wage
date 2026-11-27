@@ -1,0 +1,18 @@
+--- a/src/File.php
++++ b/src/File.php
+@@ -376,7 +376,7 @@ final class File
+            throw new FileSizeIncorrectException(expectedSize: $this->exactSize, actualSize: $this->uncompressedSize);
+        }
+
+-        $this->crc = hexdec(hash_final($hash));
++        $this->crc = hexdec(hash_final($hash)) & 0xffffffff;
+    }
+
+    private function compressionInit(): ?DeflateContext
+    {
+        if ($this->compressionMethod === self::COMPRESSION_METHOD_DEFLATE) {
+            return deflate_init(ZLIB_ENCODING_RAW);
+        }
+
+        return null;
+    }

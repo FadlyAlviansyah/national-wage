@@ -1,0 +1,17 @@
+{
+    "_hash": "829c75af71bcd5ef28cc55ff9ee932111e54e7a9157e321043391ba00490b053",
+    "patches": {
+        "maennchen/zipstream-php": [
+            {
+                "package": "maennchen/zipstream-php",
+                "description": "Fix CRC32 float assignment on 32-bit PHP",
+                "url": "patches/zipstream-32bit-crc.patch",
+                "sha256": "1864e8d77be4856f6abfbf71f77851bd44766d1ace220c3509256680d697ceee",
+                "depth": 1,
+                "extra": {
+                    "provenance": "root"
+                }
+            }
+        ]
+    }
+}
